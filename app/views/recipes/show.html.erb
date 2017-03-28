@@ -20,5 +20,7 @@
   <%= @recipe.description %>
 </p>
 
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<% if current_user == @recipe.user %>
+  <%= link_to 'Edit', edit_recipe_path(@recipe) %> 
+<% end %>
 <%= link_to 'Back', recipes_path %>
