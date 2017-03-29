@@ -91,3 +91,10 @@ p#notice {
   margin-right: 0;
   margin-left: 0;
 }
+
+@media (max-width: 29em) {
+.home_background {
+        background-color: #5bc0de;
+        background-image: none;
+    }
+}
