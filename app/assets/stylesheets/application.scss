@@ -15,3 +15,21 @@
  *= require foundation_and_overrides
 
  */
+
+.circle {
+  text-align: center;
+  font-size: 14px;
+  border-radius: 18px;
+  color:white;
+}
+
+.button.warning {
+  color: white;
+  font-weight: bold;
+}
+
+.button.warning:hover {
+  background-color: #f0ad4e;
+  color: white;
+  font-weight: bold;
+}
