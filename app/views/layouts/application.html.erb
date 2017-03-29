@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <title>EatYV</title>
     <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-  <center>
+    <center>
       <% if user_signed_in? %>
-        <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
+        <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete%>
         <%= link_to 'Settings', edit_user_registration_path %>
-      <% else %>
-        <%= link_to 'Sign In', new_user_session_path %>
-        <%= link_to 'Sign Up', new_user_registration_path %>
       <% end %>
-      <br>
       <%= yield %>
     </center>
-
   </body>
 </html>

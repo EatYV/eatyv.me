@@ -26,10 +26,64 @@
 .button.warning {
   color: white;
   font-weight: bold;
+  background-color: #f0ad4e;
 }
 
 .button.warning:hover {
   background-color: #f0ad4e;
   color: white;
   font-weight: bold;
+}
+
+.home_background {
+  background-image: url("home_background.jpg");
+  background-repeat: no-repeat;
+  height: calc(100vh - 0px);
+  background-size: cover !important;
+  background-position: center top;
+  opacity: 1;
+  align-items: center;
+  visibility: inherit;
+  display: flex;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-y: hidden;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.home_background-content {
+  min-width: 400px;
+  color: white;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.home_background h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.home_background p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  text-shadow: 0px 1px rgba(0, 0, 0.5, 0.5);
+}
+
+body {
+  margin: 0px;
+}
+
+p#notice {
+  margin: 0;
+}
+
+.button.expanded {
+  display: block;
+  width: 40%;
+  margin-right: 0;
+  margin-left: 0;
 }
