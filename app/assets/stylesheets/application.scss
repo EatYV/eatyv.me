@@ -112,3 +112,38 @@ p#notice {
         background-image: none;
     }
 }
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  background-color: transparent;
+  color: #f0ad4e;
+}
+
+#error_explanation h2 {
+  background-color: #f0ad4e;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+#error_explanation ul li {
+  list-style: none;
+}
+
+#error_explanation {
+  width: 150%;
+  border: none;
+  padding-bottom: 1px;
+}
+
+ul {
+  margin: 10px;
+  color: #f0ad4e;
+}
+
+.field_with_errors {
+  background-color: rgba(240, 173, 78, 0.5);
+  width: 100%;
+}
