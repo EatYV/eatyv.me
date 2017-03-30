@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <% if current_user == @recipe.user and current_user == @reservation.user %>
+  <% if current_user == @recipe.user or current_user == @reservation.user %>
     <% @reservations.each do |reservation| %>
       <div class='reserv-box'>
         <p><%= reservation.first_name %></p>
