@@ -131,11 +131,11 @@ p#notice {
     }
 }
 
-a:visited {
+a.forgot_password:visited {
   color: #fff;
 }
 
-a:hover {
+a.forgot_password:hover {
   background-color: transparent;
   color: #f0ad4e;
 }
