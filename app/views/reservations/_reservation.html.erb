@@ -1,0 +1,17 @@
+<% if current_user == @recipe.user %>
+  <% @reservations.each do |reservation| %>
+    <div class='reserv-box'>
+      <p><%= reservation.first_name %></p>
+      <p><%= reservation.last_name %></p>
+      <p><%= reservation.persons %></p>
+      <p><%= reservation.time %></p>
+      <p><%= reservation.message %></p>
+      <p><%= reservation.user.email %></p>
+      <p><%= reservation.created_at %></p>
+    </div>
+    <br>
+    <br>
+  <% end %>
+<% end %>
+
+<%= render 'reservations/form' %>

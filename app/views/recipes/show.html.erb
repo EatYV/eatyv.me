@@ -24,3 +24,8 @@
   <%= link_to 'Edit', edit_recipe_path(@recipe) %> 
 <% end %>
 <%= link_to 'Back', recipes_path %>
+
+<% if user_signed_in? %>
+  <h2>Reservations:</h2>
+  <%= render 'reservations/reservation' %>
+<% end %>

@@ -1,14 +1,14 @@
 <% if !user_signed_in? %>
   <div class="home_background">
-  <div class="home_background-content">
-    <h1>EatYV</h1>
-    <p>
-      Create your own recipes or eat Your Vegetables!
-    </p>
+    <div class="home_background-content">
+      <h1>EatYV</h1>
+      <p>
+        Create your own recipes or eat Your Vegetables!
+      </p>
       <%= link_to 'Get Started', new_user_registration_path, class: 'button warning expanded'  %>
       <%= link_to 'Sign In', new_user_session_path, class: 'button warning expanded' %>
+    </div>
   </div>
-</div>
 <% end %>
 
 <div class="second_home_background">

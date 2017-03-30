@@ -1,0 +1,27 @@
+<% if user_signed_in? %>
+  <%= form_for([@recipe, @recipe.reservations.build]) do |f| %>
+    <div class="field">
+      <%= f.text_field :first_name, placeholder: :first_name %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.text_field :last_name, placeholder: :last_name %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.number_field :persons, placeholder: :persons %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.text_field :time, placeholder: :time, class: 'form-control'  %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.text_area :message, placeholder: :message, size: '30x6' %>
+    </div>
+    <br>
+    <%= f.submit class: 'button warning circle'%>
+    <br>
+    <br>
+  <% end %>
+<% end %>
