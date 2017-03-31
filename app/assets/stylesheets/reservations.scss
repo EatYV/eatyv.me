@@ -2,13 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.reserv-box {
-  border: 2px solid #f0ad4e;
+.callout.warning {
   border-radius: 20px;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.reserv-box p {
+.callout.warning p {
   margin: 3px;
 }
