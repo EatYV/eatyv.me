@@ -1,10 +1,10 @@
 <% if user_signed_in? %>
   <div class="white_background">
-    <div class="small-6 large-centered columns">
+    <div class="small-6 small-centered columns">
       <h1>New Recipe</h1>
-  
+
       <%= render 'form', recipe: @recipe %>
-  
+
       <%= link_to '&#x276e;'.html_safe, recipes_path, class: 'hollow button secondary' %>
     </div>
   </div>

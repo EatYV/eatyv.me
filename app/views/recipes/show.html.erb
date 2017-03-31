@@ -22,6 +22,8 @@
   <% if current_user == @recipe.user %>
     <%= link_to 'Edit', edit_recipe_path(@recipe) %>
   <% end %>
+  <br>
+  <br>
   <%= link_to '&#x276e;'.html_safe, recipes_path, class: 'hollow button secondary' %>
 
   <% if user_signed_in? %>

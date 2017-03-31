@@ -1,5 +1,5 @@
 <% if user_signed_in? and current_user != @recipe.user %>
-  <div class="small-6 large-centered columns">
+  <div class="small-6 small-centered columns">
     <%= form_for([@recipe, @recipe.reservations.build]) do |f| %>
       <div class="field">
         <%= f.text_field :first_name, placeholder: :first_name %>
