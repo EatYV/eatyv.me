@@ -1,31 +1,31 @@
 <p id="notice"><%= notice %></p>
+  <p>
+    <strong>Title:</strong>
+    <%= @recipe.title %>
+  </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @recipe.title %>
-</p>
+  <p>
+    <strong>Price:</strong>
+    <%= @recipe.price %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @recipe.price %>
-</p>
+  <p>
+    <strong>Duration:</strong>
+    <%= @recipe.duration %>
+  </p>
 
-<p>
-  <strong>Duration:</strong>
-  <%= @recipe.duration %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @recipe.description %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @recipe.description %>
-</p>
+  <% if current_user == @recipe.user %>
+    <%= link_to 'Edit', edit_recipe_path(@recipe) %>
+  <% end %>
+  <%= link_to '&#x276e;'.html_safe, recipes_path, class: 'hollow button secondary' %>
 
-<% if current_user == @recipe.user %>
-  <%= link_to 'Edit', edit_recipe_path(@recipe) %> 
-<% end %>
-<%= link_to 'Back', recipes_path %>
-
-<% if user_signed_in? %>
-  <h2>Reservations:</h2>
-  <%= render 'reservations/reservation' %>
-<% end %>
+  <% if user_signed_in? %>
+    <br>
+    <h2>Reservations:</h2>
+    <%= render 'reservations/reservation' %>
+  <% end %>

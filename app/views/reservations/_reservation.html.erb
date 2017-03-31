@@ -1,4 +1,4 @@
-<% if current_user == @recipe.user %>  
+<% if current_user == @recipe.user %>
   <% @reservations.each do |reservation| %>
     <div class='reserv-box'>
       <p><%= reservation.first_name %></p>
@@ -14,13 +14,13 @@
     <br>
   <% end %>
 <% end %>
-  
-  
-  
+
+
+
 <% unless current_user.blank? %>
   <% @reservations.each do |reservation| %>
     <% if current_user.id == reservation.user_id %>
-      <div class='reserv-box'>  
+      <div class='reserv-box'>
         <p><%= reservation.first_name %></p>
         <p><%= reservation.last_name %></p>
         <p><%= reservation.persons %></p>
@@ -30,6 +30,8 @@
         <p><%= reservation.created_at %></p>
         <p><%= reservation.price %></p>
       </div>
+      <br>
+      <br>
     <% end %>
   <% end %>
 <% end %>
