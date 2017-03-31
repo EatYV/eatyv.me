@@ -1,6 +1,8 @@
-<h1>Editing Recipe</h1>
+<div class="white_background">
+<div class="small-6 large-centered columns">
+  <h1>Editing Recipe</h1>
+  <%= render 'form', recipe: @recipe %>
 
-<%= render 'form', recipe: @recipe %>
-
-<%= link_to 'Show', @recipe %> |
-<%= link_to 'Back', recipes_path %>
+  <%= link_to '&#x276e;'.html_safe, recipes_path, class: 'hollow button secondary' %>
+</div>
+</div>

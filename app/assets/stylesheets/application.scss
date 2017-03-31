@@ -16,13 +16,15 @@
 
  */
 
- @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-.circle {
+a.hollow.button.secondary {
   text-align: center;
   font-size: 14px;
   border-radius: 18px;
-  color:white;
+  padding: 0.72em 1em;
+  color: #838383;
+  border: 1px solid #838383;
 }
 
 .button.warning {
@@ -32,7 +34,7 @@
 }
 
 .button.warning:hover {
-  background-color: #f0ad4e;
+  background-color: #e3a34a;
   color: white;
   font-weight: bold;
 }
@@ -54,7 +56,7 @@
   background-attachment: fixed;
 }
 
-.second_home_background {
+.white_background {
   background-color: #f8f8f8;
   background-repeat: no-repeat;
   height: calc(100vh - 0px);
@@ -79,7 +81,7 @@
   padding-bottom: 10px;
 }
 
-.home_background h1 {
+h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 90px;
   font-weight: bold;
@@ -90,6 +92,13 @@
   /* Rules below not implemented in browsers yet */
   -o-user-select: none;
   user-select: none;
+}
+
+.h2_dancing_script {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 
 .home_background p {
@@ -164,4 +173,13 @@ ul {
 .field_with_errors {
   background-color: rgba(240, 173, 78, 0.5);
   width: 100%;
+}
+
+p.settings_p {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.recipes_align {
+  padding-top: 0;
 }

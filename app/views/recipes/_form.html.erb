@@ -13,23 +13,19 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :title %>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, placeholder: :title %>
     </div>
 
     <div class="field">
-      <%= f.label :price %>
-      <%= f.text_field :price %>
+      <%= f.text_field :price, placeholder: :price %>
     </div>
 
     <div class="field">
-      <%= f.label :duration %>
-      <%= f.number_field :duration %>
+      <%= f.number_field :duration, placeholder: :duration %>
     </div>
 
     <div class="field">
-      <%= f.label :description %>
-      <%= f.text_area :description %>
+      <%= f.text_area :description, placeholder: :description, size: '30x5' %>
     </div>
 
     <div class="actions">
