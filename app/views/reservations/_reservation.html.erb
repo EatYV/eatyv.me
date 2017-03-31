@@ -11,7 +11,7 @@
       <p><em><%= reservation.message %></em></p>
       <p><%= reservation.user.email %></p>
       <p><%= reservation.created_at.strftime("%Y-%d-%m") %></p>
-      <p>Total: <b><%= reservation.price %></b></p>
+      <p>Total: <b><%= reservation.final_price %></b></p>
     </div>
     <br>
     <br>
@@ -31,7 +31,7 @@
         <p><%= reservation.message %></p>
         <p><%= reservation.user.email %></p>
         <p><%= reservation.created_at.strftime("%Y-%d-%m") %></p>
-        <p><%= reservation.price %></p>
+        <p>Total: <b><%= reservation.final_price %></b></p>
       </div>
       <br>
       <br>
