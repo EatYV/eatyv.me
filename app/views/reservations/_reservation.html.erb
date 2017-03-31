@@ -10,7 +10,7 @@
       <p><%= reservation.time %></p>
       <p><%= reservation.message %></p>
       <p><%= reservation.user.email %></p>
-      <p><%= reservation.created_at %></p>
+      <p><%= reservation.created_at.strftime("%Y-%d-%m") %></p>
       <p><%= reservation.price %></p>
     </div>
     <br>
@@ -30,7 +30,7 @@
         <p><%= reservation.time %></p>
         <p><%= reservation.message %></p>
         <p><%= reservation.user.email %></p>
-        <p><%= reservation.created_at %></p>
+        <p><%= reservation.created_at.strftime("%Y-%d-%m") %></p>
         <p><%= reservation.price %></p>
       </div>
       <br>
