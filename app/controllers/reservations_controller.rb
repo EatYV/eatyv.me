@@ -4,6 +4,7 @@ class ReservationsController < ApplicationController
   def create
     @reservation = @recipe.reservations.new(reservation_params)
     @reservation.user_id = current_user.id
+    @reservation.price = @recipe.price
     @reservation.save
 
     if @reservation.save
