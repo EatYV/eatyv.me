@@ -1,6 +1,0 @@
-FATAL:  lock file "postmaster.pid" already exists
-HINT:  Is another postmaster (PID 2609) running in data directory "/usr/local/var/postgres"?
-LOG:  database system was shut down at 2017-03-31 03:52:12 EEST
-LOG:  MultiXact member wraparound protections are now enabled
-LOG:  database system is ready to accept connections
-LOG:  autovacuum launcher started
