@@ -1,3 +1,36 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.corners {
+  background: #fff3d9;
+  margin: 100px auto 50px;
+  max-width: 70%;
+  position: relative;
+  padding: 5px;
+  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+}
+
+.corners:after,
+.corners:before {
+  background: #f9cf94;
+  content: '';
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  width: 100px;
+  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+  left: -50px;
+  transform: rotate(-45deg);
+}
+.corners:before {
+  right: -50px;
+  transform: rotate(45deg);
+}
+
+.inner_recipe_background {
+  background-color: #f8f8f8;
+  padding-top: 20px;
+}

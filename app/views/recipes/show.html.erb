@@ -1,33 +1,36 @@
 <p id="notice"><%= notice %></p>
-  <p>
-    <strong>Title:</strong>
-    <%= @recipe.title %>
-  </p>
+<div class="inner_recipe_background">
+  <div class="corners">
+    <p>
+      <strong>Title:</strong>
+      <%= @recipe.title %>
+    </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= @recipe.price %>
-  </p>
+    <p>
+      <strong>Price:</strong>
+      <%= @recipe.price %>
+    </p>
 
-  <p>
-    <strong>Duration:</strong>
-    <%= @recipe.duration %>
-  </p>
+    <p>
+      <strong>Duration:</strong>
+      <%= @recipe.duration %>
+    </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @recipe.description %>
-  </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @recipe.description %>
+    </p>
+  </div>
 
-  <% if current_user == @recipe.user %>
-    <%= link_to 'Edit', edit_recipe_path(@recipe) %>
-  <% end %>
-  <br>
-  <br>
   <%= link_to '&#x276e;'.html_safe, recipes_path, class: 'hollow button secondary' %>
-
-  <% if user_signed_in? %>
-    <br>
-    <h2>Reservations:</h2>
-    <%= render 'reservations/reservation' %>
+  <% if current_user == @recipe.user %>
+    <%= link_to '&#9998;'.html_safe, edit_recipe_path(@recipe), class: 'hollow button success' %>
+    <%= link_to '&#10006;'.html_safe, @recipe, method: :delete, data: { confirm: 'Are you sure?' }, class: 'hollow button alert' %>
   <% end %>
+
+    <% if user_signed_in? %>
+      <br>
+      <h2>Reservations:</h2>
+      <%= render 'reservations/reservation' %>
+    <% end %>
+</div>

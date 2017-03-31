@@ -25,6 +25,29 @@ a.hollow.button.secondary {
   padding: 0.72em 1em;
   color: #838383;
   border: 1px solid #838383;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+a.hollow.button.success {
+  text-align: center;
+  font-size: 14px;
+  border-radius: 18px;
+  padding: 0.72em 0.84em;
+  color: #21c55e;
+  border: 1px solid #21c55e;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+a.hollow.button.alert {
+  text-align: center;
+  font-size: 14px;
+  border-radius: 18px;
+  padding: 0.72em 0.84em;
+  border: 1px solid;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .button.warning {
@@ -132,6 +155,10 @@ p#notice {
   margin-right: 0;
   margin-left: 0;
   font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.button.expanded.full-update {
+  width: 100%;
 }
 
 @media (max-width: 29em) {
