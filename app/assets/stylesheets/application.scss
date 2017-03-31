@@ -72,6 +72,7 @@ a.hollow.button.secondary {
   overflow-y: hidden;
   justify-content: center;
   background-attachment: fixed;
+  padding-top: 50px;
 }
 
 .home_background-content {
@@ -94,7 +95,7 @@ h1 {
   user-select: none;
 }
 
-.h2_dancing_script {
+h2 {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
   font-weight: bold;
@@ -120,7 +121,6 @@ p#notice {
 
 .button.expanded {
   display: block;
-  width: 40%;
   margin-right: 0;
   margin-left: 0;
 }

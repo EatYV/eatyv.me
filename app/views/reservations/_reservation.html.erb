@@ -1,3 +1,7 @@
+<br>
+<%= render 'reservations/form' %>
+<br>
+
 <% if current_user == @recipe.user %>
   <% @reservations.each do |reservation| %>
     <div class='reserv-box'>
@@ -35,8 +39,4 @@
     <% end %>
   <% end %>
 <% end %>
-
-<br>
-
-<%= render 'reservations/form' %>
 
