@@ -28,9 +28,9 @@
     <%= link_to '&#10006;'.html_safe, @recipe, method: :delete, data: { confirm: 'Are you sure?' }, class: 'hollow button alert' %>
   <% end %>
 
-    <% if user_signed_in? %>
-      <br>
-      <h2>Reservations:</h2>
-      <%= render 'reservations/reservation' %>
-    <% end %>
+  <% if user_signed_in? %>
+    <br>
+    <h2>Reservations:</h2>
+    <%= render 'reservations/reservation' %>
+  <% end %>
 </div>
