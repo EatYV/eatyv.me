@@ -1,12 +1,14 @@
 // Place all the styles related to the reservations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .reserv-box {
-  border-style: solid;
-  border-color: #f0ad4e;
-  border-width: 2px;
+  border: 2px solid #f0ad4e;
   border-radius: 20px;
   margin-left: 15%;
   margin-right: 15%;
-  padding-top: 10px;
+}
+
+.reserv-box p {
+  margin: 3px;
 }
