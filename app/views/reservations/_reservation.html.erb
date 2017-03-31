@@ -4,14 +4,14 @@
 <% if current_user == @recipe.user %>
   <% @reservations.each do |reservation| %>
     <div class='callout warning'>
-      <p><%= reservation.first_name %></p>
-      <p><%= reservation.last_name %></p>
-      <p><%= reservation.persons %></p>
-      <p><%= reservation.time %></p>
-      <p><%= reservation.message %></p>
+      <p>First Name: <b><%= reservation.first_name %></b></p>
+      <p>Last Name: <b><%= reservation.last_name %></b></p>
+      <p>Number of persons: <b><%= reservation.persons %></b></p>
+      <p>Arrives at: <b><%= reservation.time %></b></p>
+      <p><em><%= reservation.message %></em></p>
       <p><%= reservation.user.email %></p>
       <p><%= reservation.created_at.strftime("%Y-%d-%m") %></p>
-      <p><%= reservation.price %></p>
+      <p>Total: <b><%= reservation.price %></b></p>
     </div>
     <br>
     <br>
