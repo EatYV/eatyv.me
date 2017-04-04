@@ -82,13 +82,12 @@ a.hollow.button.alert {
 .white_background {
   background-color: #fff;
   background-repeat: no-repeat;
-  height: calc(100vh - 0px);
+  min-height: calc(100vh - 0px);
   background-size: cover !important;
   background-position: center top;
   opacity: 1;
   align-items: center;
   visibility: inherit;
-  min-height: 100%;
   /*display: flex;*/
   width: 100%;
   overflow-y: scroll;
