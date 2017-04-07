@@ -7,11 +7,6 @@ textarea#review_comment.small-6.small-centered.columns {
   height: 50px;
 }
 
-select#review_grade {
-  width: 50px;
-  margin: 0px;
-}
-
 .review-grade {
   color: #f0ad4e;
   margin-top: 5px;
@@ -19,4 +14,9 @@ select#review_grade {
 
 .review-comment {
   margin-bottom: 15px;
+}
+
+select#review_grade {
+    width: 7%;
+    margin: 0px;
 }
