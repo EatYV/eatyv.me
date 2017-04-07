@@ -29,8 +29,12 @@
   <% end %>
 
   <% if user_signed_in? %>
-    <br>
+
     <h2>Reservations:</h2>
     <%= render 'reservations/reservation' %>
+
+    <h2>Reviews:</h2>
+    <%= render  'reviews/review' %>
+
   <% end %>
 </div>

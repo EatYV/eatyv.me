@@ -1,0 +1,8 @@
+<% @reviews.each do |review| %>
+
+  <div class="review-grade"> <%= review.grade %> </div>
+  <div class="review-comment"> <%= review.comment %> </div>
+
+<% end %>
+
+<%= render 'reviews/form' %>

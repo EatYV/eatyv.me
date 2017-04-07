@@ -1,0 +1,15 @@
+<% if user_signed_in? and current_user != @recipe.user %>
+  <%= form_for([@recipe, @recipe.reviews.build]) do |f| %>
+
+    <div class="field">
+      <%= f.text_area :comment, step: :any, placeholder: :comment, class: 'small-6 small-centered columns' %>
+    </div>
+    <div class="field">
+      <%= f.select :grade, [5, 4, 3, 2, 1] %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit 'Add Review', class: 'button warning' %>
+    </div>
+  <% end %>
+<% end %>

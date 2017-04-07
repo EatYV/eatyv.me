@@ -1,0 +1,22 @@
+// Place all the styles related to the reviews controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+textarea#review_comment.small-6.small-centered.columns {
+  margin: 0px;
+  height: 50px;
+}
+
+select#review_grade {
+  width: 50px;
+  margin: 0px;
+}
+
+.review-grade {
+  color: #f0ad4e;
+  margin-top: 5px;
+}
+
+.review-comment {
+  margin-bottom: 15px;
+}
