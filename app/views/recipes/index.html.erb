@@ -22,6 +22,7 @@
         <th>Price</th>
         <th>Duration</th>
         <th>Description</th>
+        <th>Image</th>
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -33,6 +34,7 @@
           <td><%= recipe.price %></td>
           <td><%= recipe.duration %></td>
           <td><%= recipe.description %></td>
+          <td><%= image_tag recipe.image_url(:thumb) %></td>
           <td><%= link_to 'Show', recipe %></td>
 
           <% if current_user == recipe.user %>
