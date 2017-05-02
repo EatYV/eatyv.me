@@ -23,7 +23,7 @@
             <%= link_to 'show', recipe, class: 'hollow button success' %>
             <%= image_tag recipe.image_url(:thumb) %>
             <br>
-            <p class="text-center featured-image-block-title"><%= recipe.title %></p>
+            <h3><%= recipe.title %></h3>
             <p class="text-center">Price: <%= recipe.price %></p>
             <br>Cooking time: <%= recipe.duration %> (min)
             <br><p class="text-center"><%= recipe.description.truncate(150) %></p> <!-- fuge textul...trebuie facut ceva -->
