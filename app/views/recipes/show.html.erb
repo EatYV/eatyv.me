@@ -11,12 +11,11 @@
       <%= @recipe.price %>
     </p>
     <p>
-      <strong>Image:</strong>
       <%= image_tag @recipe.image_url(:thumb).to_s %>
     </p>
     <p>
       <strong>Duration:</strong>
-      <%= @recipe.duration %>
+      <%= @recipe.duration %>  (min)
     </p>
 
     <p>

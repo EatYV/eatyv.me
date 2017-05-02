@@ -21,12 +21,12 @@
           <% @recipes.each do |recipe| %>
           <hr>
             <%= link_to 'show', recipe, class: 'hollow button success' %>
-            <%= image_tag recipe.image_url(:thumb) %>
             <br>
+            <%= image_tag recipe.image_url(:thumb) %>
             <h3><%= recipe.title %></h3>
             <p class="text-center">Price: <%= recipe.price %></p>
-            <br>Cooking time: <%= recipe.duration %> (min)
-            <br><p class="text-center"><%= recipe.description.truncate(150) %></p> <!-- fuge textul...trebuie facut ceva -->
+            <p class="text-center"> Cooking time: <%= recipe.duration %> (min)</p>
+            <p class="text-center"><%= recipe.description.truncate(150) %></p> <!-- fuge textul...trebuie facut ceva -->
             <br>
           <%end%>
         </div>
