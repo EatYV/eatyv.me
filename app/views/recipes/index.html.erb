@@ -10,7 +10,7 @@
     </div>
   </div>
 <% end %>
-
+<!--
 <div class="white_background">
   <h1>Recipes</h1>
   <br>
@@ -52,3 +52,28 @@
     <%= link_to 'New Recipe', new_recipe_path, class: 'button warning' %>
   <% end %>
 </div>
+-->
+<div class="white_background">
+<div class="featured-image-block-grid">
+  <div class="featured-image-block-grid-header small-10 medium-8 large-7 columns text-center">
+    <h1>Recipes</h1>
+  </div>
+  <div class="row large-up-4 small-up-2">
+    <div class="featured-image-block column">
+    <% @recipes.each do |recipe| %>
+     <%= link_to 'show', recipe, class: 'hollow button success' %>
+     <% if current_user == recipe.user %>
+            <%= link_to 'Edit', edit_recipe_path(recipe), class: 'hollow button secondary ' %>
+            <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' }, class: 'hollow button alert' %>
+          <% end %>
+        <%= image_tag recipe.image_url(:thumb) %>
+        <p class="text-center featured-image-block-title"><%= recipe.title %></p>
+        <p class="text-center">Priece: <%= recipe.price %>
+        <br><br>Cooking time: <%= recipe.duration %> (min)
+        <br><br><%= recipe.description %></p> <!-- fuge textul...trebei facut ceva -->
+      <%end%>
+    </div>
+  </div>
+</div>
+</div>
+
