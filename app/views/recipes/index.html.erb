@@ -12,29 +12,29 @@
 <% end %>
 
 <% if user_signed_in? %>
-<br>
-<div class="small-6 small-centered columns">
-  <h1>Recipes</h1>
-  <div class="white_background">
-    <div class="featured-image-block-grid">
-      <div class="featured-image-block column">
-        <% @recipes.each do |recipe| %>
-        <hr>
-          <%= link_to 'show', recipe, class: 'hollow button success' %>
-          <% if current_user == recipe.user %>
-            <%= link_to 'Edit', edit_recipe_path(recipe), class: 'hollow button secondary ' %>
-            <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' }, class: 'hollow button alert' %>
-          <% end %>
-          <%= image_tag recipe.image_url(:thumb) %>
-          <br>
-          <p class="text-center featured-image-block-title"><%= recipe.title %></p>
-          <p class="text-center">Price: <%= recipe.price %></p>
-          <br>Cooking time: <%= recipe.duration %> (min)
-          <br><p class="text-center"><%= recipe.description.truncate(150) %></p> <!-- fuge textul...trebuie facut ceva -->
-          <br>
-        <%end%>
+  <br>
+  <div class="small-6 small-centered columns">
+    <h1>Recipes</h1>
+    <div class="white_background">
+      <div class="featured-image-block-grid">
+        <div class="featured-image-block column">
+          <% @recipes.each do |recipe| %>
+          <hr>
+            <%= link_to 'show', recipe, class: 'hollow button success' %>
+            <% if current_user == recipe.user %>
+              <%= link_to 'Edit', edit_recipe_path(recipe), class: 'hollow button secondary ' %>
+              <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' }, class: 'hollow button alert' %>
+            <% end %>
+            <%= image_tag recipe.image_url(:thumb) %>
+            <br>
+            <p class="text-center featured-image-block-title"><%= recipe.title %></p>
+            <p class="text-center">Price: <%= recipe.price %></p>
+            <br>Cooking time: <%= recipe.duration %> (min)
+            <br><p class="text-center"><%= recipe.description.truncate(150) %></p> <!-- fuge textul...trebuie facut ceva -->
+            <br>
+          <%end%>
+        </div>
       </div>
     </div>
   </div>
-</div>
 <% end %>
