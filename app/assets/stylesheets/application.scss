@@ -97,26 +97,20 @@ a.hollow.button.alert {
   padding-top: 50px;
 }
 
-.black_background {
-  background-image: url("home_background.jpg");
+.small_background {
+  background-color: #fff;
   background-repeat: no-repeat;
-  height: calc(50vh - 0px);
   background-size: cover !important;
   background-position: center top;
   opacity: 1;
   align-items: center;
   visibility: inherit;
-  display: flex;
+  /*display: flex;*/
   width: 100%;
   overflow-y: scroll;
   overflow-y: hidden;
   justify-content: center;
   background-attachment: fixed;
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px) grayscale(100%);
 }
 
 .home_background-content {
@@ -269,5 +263,10 @@ p.settings_p {
 
 
 #recipe_image {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+
+p.info {
+  color: #f0ad4e;
+  padding: 30px;
 }
