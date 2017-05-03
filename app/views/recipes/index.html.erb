@@ -7,12 +7,21 @@
       </p>
       <%= link_to 'Get Started', new_user_registration_path, class: 'button warning expanded'  %>
       <%= link_to 'Sign In', new_user_session_path, class: 'button warning expanded' %>
+      <a class="aboutus" data-toggle="offCanvasBottom">About us</a> | <a class="aboutus" data-toggle="ContactModal">Contact us</a>
+      <div class="reveal" id="ContactModal" data-reveal>
+        <center>
+          <h3>Contact us:</h3>
+          <p>contact@eatyv.me</p>
+        </center>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
   </div>
-  <div class="small_background">
-    <div class="small-11 small-centered columns">
-      <p class="info">We connect people who enjoy cooking with those who appreciate a good meal. Becoming a chef which involves creating new recipes and cooking them at home offers students, travellers and other clients the opportunity to relish unique courses in the presence of those who prepared them, while also reducing the costs usually involved in having a meal out. Being a great social tool, benefit from this and enhance your travelling experiences as a client.<br><strong>Meeting people has never been tastier!</strong></p>
-    </div>
+  <div class="off-canvas position-bottom" id="offCanvasBottom" data-off-canvas>
+    <!-- <p class="info">We connect people who enjoy cooking with those who appreciate a good meal. Becoming a chef which involves creating new recipes and cooking them at home offers students, travellers and other clients the opportunity to relish unique courses in the presence of those who prepared them, while also reducing the costs usually involved in having a meal out. Being a great social tool, benefit from this and enhance your travelling experiences as a client.<br><strong>Meeting people has never been tastier!</strong></p> -->
+    <p>Video</p>
   </div>
 <% end %>
 

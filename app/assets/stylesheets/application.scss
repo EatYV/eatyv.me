@@ -183,12 +183,14 @@ p#notice {
   width: 100%;
 }
 
+/*
 @media (max-width: 29em) {
 .home_background {
         background-color: #5bc0de;
         background-image: none;
     }
 }
+*/
 
 a.forgot_password:visited {
   color: #fff;
@@ -267,6 +269,29 @@ p.settings_p {
 }
 
 p.info {
-  color: #f0ad4e;
+  color: #fff;
   padding: 30px;
+}
+
+.js-off-canvas-overlay.is-visible {
+  opacity: 0.1;
+}
+
+.aboutus {
+  color: #fff;
+  position: relative;
+  bottom: 0px;
+}
+
+a.aboutus:hover {
+  background-color: transparent;
+  color: #f0ad4e;
+}
+
+.position-bottom {
+  height: 200px;
+}
+
+.off-canvas {
+  background: #121212;
 }
