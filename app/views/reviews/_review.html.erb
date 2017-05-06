@@ -2,7 +2,7 @@
 
   <div class="review-grade"> <% review.grade.times { concat "&#9733;".html_safe} %> </div>
   <div class="review-comment"> <%= review.comment %> </div>
-  <div class="review-comment"> <%= review.user.email %></div>
+  <div class="review-email"><i> (<%= review.user.email %>) </i></div>
 <% end %>
 
 <br>
