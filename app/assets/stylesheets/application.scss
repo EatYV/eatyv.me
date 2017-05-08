@@ -287,6 +287,11 @@ a.aboutus:hover {
   color: #f0ad4e;
 }
 
+a.aboutus:visited {
+  background-color: transparent;
+  color: #fff;
+}
+
 .position-bottom {
   height: 200px;
 }
