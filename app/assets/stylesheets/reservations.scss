@@ -11,3 +11,15 @@
 .callout.warning p {
   margin: 3px;
 }
+
+@media (min-width: 29em) {
+.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 29em) {
+.not-mobile {
+        display: none;
+    }
+}

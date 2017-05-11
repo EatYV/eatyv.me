@@ -12,7 +12,6 @@
     </div>
   </div>
   <div class="off-canvas position-bottom" id="offCanvasBottom" data-off-canvas>
-    <!-- <p class="info">We connect people who enjoy cooking with those who appreciate a good meal. Becoming a chef which involves creating new recipes and cooking them at home offers students, travellers and other clients the opportunity to relish unique courses in the presence of those who prepared them, while also reducing the costs usually involved in having a meal out. Being a great social tool, benefit from this and enhance your travelling experiences as a client.<br><strong>Meeting people has never been tastier!</strong></p> -->
     <p class="info">
       <iframe width="420" height="315" src="https://www.youtube.com/embed/iJynqlTxUvg" frameborder="0" allowfullscreen></iframe>
     </p>
@@ -21,20 +20,20 @@
 
 <% if user_signed_in? %>
   <br>
+  <h1>Recipes</h1>
   <div class="small-6 small-centered columns">
-    <h1>Recipes</h1>
     <div class="white_background no-padding">
       <div class="featured-image-block-grid">
         <div class="featured-image-block column">
           <% @recipes.each do |recipe| %>
           <hr>
-            <%= link_to 'show', recipe, class: 'hollow button success' %>
+            <%= link_to 'View', recipe, class: 'hollow button success' %>
             <br>
             <%= image_tag recipe.image_url(:thumb) %>
             <h3><%= recipe.title %></h3>
             <p class="text-center">Price: <%= recipe.price %> RON</p>
             <p class="text-center"> Cooking time: <%= recipe.duration %> (min)</p>
-            <p class="text-center"><%= recipe.description.truncate(150) %></p> <!-- fuge textul...trebuie facut ceva -->
+            <p class="text-center"><%= recipe.description.truncate(150) %></p>
             <br>
           <%end%>
         </div>
