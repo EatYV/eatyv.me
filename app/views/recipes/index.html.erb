@@ -63,6 +63,10 @@
             <%= image_tag recipe.image_url(:thumb) %>
             <h3><%= recipe.title %></h3>
             <p class="text-center">Price: <%= recipe.price %> RON</p>
+            <p class="text-center">Date: <%= recipe.date %>,
+            Time: <%= recipe.time %>
+            </p>
+            <p class="text-center"> Location: <%= recipe.location %></p>
             <p class="text-center"><%= recipe.description.truncate(150) %></p>
             <br>
           <%end%>
