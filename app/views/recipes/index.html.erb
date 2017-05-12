@@ -47,6 +47,17 @@
     <div class="white_background no-padding">
       <div class="featured-image-block-grid">
         <div class="featured-image-block column">
+          <div class="input-group input-group-rounded">
+            <%= form_tag recipes_path, :method => 'get' do %>
+              <%= text_field_tag :search, nil, placeholder: "Search recipe here", class: 'input-group-field'%>
+            <% end %>
+            <div class="input-group-button">
+              <input type="submit" class="button secondary" value="Search">
+            </div>
+          </div>
+
+
+
           <% @recipes.each do |recipe| %>
           <hr>
             <%= link_to 'View', recipe, class: 'hollow button success' %>
