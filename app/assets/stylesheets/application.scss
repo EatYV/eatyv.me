@@ -281,19 +281,19 @@ p.info {
 }
 
 .aboutus {
-  color: #fff;
+  color: #f0ad4e;
   position: relative;
   bottom: 0px;
 }
 
 a.aboutus:hover {
   background-color: transparent;
-  color: #f0ad4e;
+  color: #fff;
 }
 
 a.aboutus:visited {
   background-color: transparent;
-  color: #fff;
+  color: #f0ad4e;
 }
 
 .position-bottom {
@@ -363,4 +363,8 @@ a.aboutus:visited {
     width: 260px;
     height: 170px;
   }
+}
+
+.orange {
+  color: #f0ad4e;
 }

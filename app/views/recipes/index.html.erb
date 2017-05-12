@@ -8,33 +8,35 @@
       </p>
       <%= link_to 'Get Started', new_user_registration_path, class: 'button warning expanded'  %>
       <%= link_to 'Sign In', new_user_session_path, class: 'button warning expanded' %>
-      <a class="aboutus" href="mailto:contact@eatyv.me">Contact Us</a>
+      <a class="aboutus" href="mailto:contact@eatyv.me">Contact Us</a> <a class="orange">|</a> <a class="aboutus" data-open="AboutUsModal">About Us</a>
+
+    <div class="reveal" id="AboutUsModal" data-reveal>
+      <center>
+        <h1 class="orange">About us</h1>
+        <p class="lead"><strong>EatYV</strong> is a community marketplace/platform where people host, discover and book unique venues around the world.
+        <br>
+        <br>
+        Whether you are a student, employed or retired, you can have a unique travelling experience by eating at at host's/chef's house or list your home on EatYV and become a host/chef yourself and create recipes at any price point. Meeting new people has never been tastier!</p>
+          <p class="info">
+            <iframe width="480" height="270" src="https://www.youtube.com/embed/Jbb2VIqoRF4" frameborder="0" allowfullscreen></iframe>
+          </p>
+
+        <script language="javascript" type="text/javascript">
+        $(function(){
+            $('.close-button').click(function(){
+                $('iframe').attr('src', $('iframe').attr('src'));
+            });
+        });
+        </script>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </center>
+    </div>
     </div>
   </div>
 
-<p><a data-open="exampleModal2">Click me for a modal</a></p>
-
-<!-- This is the first modal -->
-<div class="reveal" id="exampleModal2" data-reveal>
-  <h1>Awesome!</h1>
-  <p class="lead">I have another modal inside of me!</p>
-  <a class="button" data-open="exampleModal3">Click me for another modal!</a>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-<!-- This is the nested modal -->
-<div class="reveal" id="exampleModal3" data-reveal>
-  <h2>ANOTHER MODAL!!!</h2>
-  <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-      <p class="info">
-        <iframe width="420" height="315" src="https://youtu.be/Jbb2VIqoRF4" frameborder="0" allowfullscreen></iframe>
-      </p>
 
 <% end %>
 

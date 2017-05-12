@@ -9,7 +9,6 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to recipe_path(@recipe)
     else
-      #render 'new'
       render file: "#{Rails.root}/public/404.html", layout: false, status: 404
     end
   end
