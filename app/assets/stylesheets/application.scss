@@ -353,3 +353,14 @@ a.aboutus:visited {
   }
 }
 
+@media screen and (max-width: 520px) {
+  iframe {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 420px) {
+  iframe {
+    width: 260px;
+    height: 170px;
+  }
+}

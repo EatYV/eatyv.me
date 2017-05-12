@@ -13,11 +13,22 @@
     <p>
       <%= image_tag @recipe.image_url(:thumb).to_s %>
     </p>
+    
     <p>
-      <strong>Duration:</strong>
-      <%= @recipe.duration %>  (min)
+      <strong>Date:</strong>
+      <%= @recipe.date %> 
     </p>
 
+    <p>
+      <strong>Time:</strong>
+      <%= @recipe.time %>  
+    </p>
+    
+    <p>
+      <strong>Location:</strong>
+      <%= @recipe.location %>
+    </p>
+    
     <p>
       <strong>Description:</strong>
       <%= @recipe.description %>
