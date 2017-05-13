@@ -370,3 +370,14 @@ a.aboutus:visited {
   padding: 10px;
   padding-left: 8px;
 }
+
+.button.hollow {
+  border: 1px solid #f0ad4e;
+  color: #f0ad4e;
+  border-radius: 18px;
+}
+
+.button.hollow:hover, .button.hollow:focus {
+  border-color: #c99042;
+  color: #c99042;
+}

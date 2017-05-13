@@ -58,7 +58,7 @@
         <div class="featured-image-block column">
           <% @recipes.each do |recipe| %>
           <hr>
-            <%= link_to 'View', recipe, class: 'hollow button success' %>
+            <%= link_to 'View', recipe, class: 'hollow button' %>
             <br>
             <%= image_tag recipe.image_url(:thumb) %>
             <h3><%= recipe.title %></h3>
