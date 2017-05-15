@@ -50,7 +50,7 @@
           <%= text_field_tag :search, nil, placeholder: "Search recipe by location", class: 'input-group-field'%>
         <% end %>
         <div class="input-group-button">
-          <input type="submit" class="button secondary" value="Search">
+          <input type="submit" class="button search-button" value="&#128269;">
         </div>
       </div>
 
@@ -58,15 +58,14 @@
         <div class="featured-image-block column">
           <% @recipes.each do |recipe| %>
           <hr>
-            <%= link_to 'View', recipe, class: 'hollow button success' %>
+            <%= link_to 'View', recipe, class: 'hollow button' %>
             <br>
             <%= image_tag recipe.image_url(:thumb) %>
             <h3><%= recipe.title %></h3>
-            <p class="text-center">Price: <%= recipe.price %> RON</p>
-            <p class="text-center">Date: <%= recipe.date %>,
-            Time: <%= recipe.time %>
+            <p class="text-center"> <%= image_tag 'icon-price.png', width: '20' %> <%= recipe.price %> RON</p>
+            <p class="text-center"> <%= image_tag 'icon-date.png', width: '20' %> <%= recipe.date %>, <%= recipe.time %>
             </p>
-            <p class="text-center"> Location: <%= recipe.location %></p>
+            <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %></p>
             <p class="text-center"><%= recipe.description.truncate(150) %></p>
             <br>
           <%end%>

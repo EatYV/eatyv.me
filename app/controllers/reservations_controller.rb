@@ -5,7 +5,10 @@ class ReservationsController < ApplicationController
     @reservation = @recipe.reservations.new(reservation_params)
     @reservation.user_id = current_user.id
     @reservation.price = @recipe.price
-    @reservation.final_price = @reservation.persons * @recipe.price 
+    if @reservation.persons == nil
+      @reservation.persons = 0
+    end
+    @reservation.final_price = @reservation.persons * @recipe.price
     @reservation.save
 
     if @reservation.save
