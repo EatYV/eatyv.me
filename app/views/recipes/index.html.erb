@@ -80,7 +80,7 @@
             <p class="text-center"> <%= image_tag 'icon-price.png', width: '20' %> <%= recipe.price %> RON</p>
             <p class="text-center"> <%= image_tag 'icon-date.png', width: '20' %> <%= recipe.date %>, <%= recipe.time %>
             </p>
-            <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %></p>
+            <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %>, <%= recipe.city %></p>
             <p class="text-center"><%= recipe.description.truncate(150) %></p>
             <br>
           <%end%>
