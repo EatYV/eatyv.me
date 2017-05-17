@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(version: 20170515065034) do
     t.string   "image"
     t.string   "date"
     t.decimal  "time"
+    t.string   "street"
+    t.string   "city"
     t.string   "location"
     t.index ["user_id"], name: "index_recipes_on_user_id", using: :btree
   end
