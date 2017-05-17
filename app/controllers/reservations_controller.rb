@@ -13,8 +13,6 @@ class ReservationsController < ApplicationController
 
     if @reservation.save
       redirect_to recipe_path(@recipe)
-    else
-      render file: "#{Rails.root}/public/404.html", layout: false, status: 404
     end
   end
 
