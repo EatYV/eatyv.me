@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'will_paginate'
 gem 'activeadmin'
 gem 'carrierwave', '~> 1.0'
 gem 'fog-aws'

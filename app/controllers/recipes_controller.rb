@@ -5,6 +5,7 @@ class RecipesController < ApplicationController
   # GET /recipes.json
   def index
     @recipes = Recipe.where('lower(location) LIKE lower(?) OR lower(location) LIKE lower(?)', "%#{params[:search]}%", "%#{params[:search]}%")
+    @recipes = Recipe.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /recipes/1
