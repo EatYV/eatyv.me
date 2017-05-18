@@ -19,30 +19,28 @@
         Whether you are a student, employed or retired, you can have a unique travelling experience by eating at at host's/chef's house or list your home on EatYV and become a host/chef yourself and create recipes at any price point. Meeting new people has never been tastier!
         </p>
       </div>
+
       <div class="medium-6 medium-pull-6 columns">
         <p class="info">
           <iframe width="480" height="270" src="https://www.youtube.com/embed/Jbb2VIqoRF4" frameborder="0" allowfullscreen></iframe>
         </p>
       </div>
-      <div class="small-6 small-centered columns">
-        <div class="featured-image-block-grid">
-        <div class="featured-image-block column">
-          <% @recipes.each do |recipe| %>
+    </div>
+
+    <div class="row small-up-2 medium-up-3 large-up-4">
+      <% @recipes.each do |recipe| %>
+        <div class="column column-block">
           <hr>
-            <%= link_to 'View', recipe, class: 'hollow button' %>
-            <br>
+          <%= link_to recipe do %>
             <%= image_tag recipe.image_url(:thumb) %>
-            <h3><%= recipe.title %></h3>
-            <p class="text-center"> <%= image_tag 'icon-price.png', width: '20' %> <%= recipe.price %> RON</p>
-            <p class="text-center"> <%= image_tag 'icon-date.png', width: '20' %> <%= recipe.date %>, <%= recipe.time %>
-            </p>
-            <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %></p>
-            <p class="text-center"><%= recipe.description.truncate(150) %></p>
-            <br>
-          <%end%>
+          <% end %>
+          <h3><%= recipe.title %></h3>
+          <p class="text-center"> <%= image_tag 'icon-price.png', width: '20' %> <%= recipe.price %> RON</p>
+          <p class="text-center"> <%= image_tag 'icon-date.png', width: '20' %> <%= recipe.date %>, <%= recipe.time %>
+          </p>
+          <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %>, <%= recipe.city %></p>
         </div>
-      </div>
-      </div>
+      <%end%>
     </div>
   </div>
 
@@ -73,16 +71,16 @@
         <div class="featured-image-block column">
           <% @recipes.each do |recipe| %>
           <hr>
-            <%= link_to 'View', recipe, class: 'hollow button' %>
             <br>
-            <%= image_tag recipe.image_url(:thumb) %>
+            <%= link_to recipe do %>
+              <%= image_tag recipe.image_url(:thumb) %>
+            <% end %>
             <h3><%= recipe.title %></h3>
             <p class="text-center"> <%= image_tag 'icon-price.png', width: '20' %> <%= recipe.price %> RON</p>
             <p class="text-center"> <%= image_tag 'icon-date.png', width: '20' %> <%= recipe.date %>, <%= recipe.time %>
             </p>
             <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %>, <%= recipe.city %></p>
             <p class="text-center"><%= recipe.description.truncate(150) %></p>
-            <br>
           <%end%>
         </div>
       </div>
