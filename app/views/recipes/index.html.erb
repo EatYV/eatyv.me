@@ -30,7 +30,6 @@
     <div class="row small-up-2 medium-up-3 large-up-4">
       <% @recipes.each do |recipe| %>
         <div class="column column-block">
-        <%= will_paginate @recipes %>
           <hr>
           <%= link_to recipe do %>
             <%= image_tag recipe.image_url(:thumb) %>
@@ -40,12 +39,11 @@
           <p class="text-center"> <%= image_tag 'icon-date.png', width: '20' %> <%= recipe.date %>, <%= recipe.time %>
           </p>
           <p class="text-center"> <%= image_tag 'icon-location.png', width: '20' %> <%= recipe.location %>, <%= recipe.city %></p>
-          <%= will_paginate @recipes %>
         </div>
       <%end%>
-    </div>
+    </div>  
+    <%= will_paginate @recipes %>
   </div>
-
   <footer>
     <div class="bottom-bar">
           <a href="https://www.facebook.com/EatYourVegetable" class="facebook" target="_blank"><%= image_tag 'icon-fb.png', width: '15' %></a>
