@@ -26,7 +26,7 @@
         </p>
       </div>
     </div>
-
+      <%= will_paginate @recipes %>
     <div class="row small-up-2 medium-up-3 large-up-4">
       <% @recipes.each do |recipe| %>
         <div class="column column-block">
@@ -42,12 +42,11 @@
         </div>
       <%end%>
     </div>
-    <!-- <%= will_paginate @recipes %> -->
   </div>
   <footer>
     <div class="bottom-bar">
           <a href="https://www.facebook.com/EatYourVegetable" class="facebook" target="_blank"><%= image_tag 'icon-fb.png', width: '15' %></a>
-          All Rights Reserved © 2017 <!--| <a class="aboutus" data-open="Terms">Terms and Conditions</a>--> <a class="contact" href="mailto:contact@eatyv.me"><%= image_tag 'icon-contact.png', width: '17' %></a>
+          All Rights Reserved © 2017 <a class="contact" href="mailto:contact@eatyv.me"><%= image_tag 'icon-contact.png', width: '17' %></a>
     </div>
   </footer>
 <% end %>
@@ -88,4 +87,3 @@
     </div>
   </div>
 <% end %>
-
