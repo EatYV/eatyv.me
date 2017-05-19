@@ -452,3 +452,27 @@ iframe {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+@media all {
+    .pagination a, .pagination button {
+        display: inline;
+        padding: 0.1875rem 0.625rem;
+        border-radius: 0;
+        color: #0a0a0a;
+    }
+}
+
+@media all {
+    .pagination .current {
+        padding: 0.1875rem 0.625rem;
+        background: #f0ad4e;
+        color: #000;
+        cursor: default;
+    }
+}
+
+@media all {
+    .pagination a:hover, .pagination button:hover {
+        background: rgba(240, 173, 78, 0.5);
+    }
+}
