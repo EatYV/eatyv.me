@@ -26,7 +26,6 @@
         </p>
       </div>
     </div>
-      <%= will_paginate @recipes %>
     <div class="row small-up-2 medium-up-3 large-up-4">
       <% @recipes.each do |recipe| %>
         <div class="column column-block">
@@ -42,6 +41,7 @@
         </div>
       <%end%>
     </div>
+    <%= will_paginate @recipes %>
   </div>
   <footer>
     <div class="bottom-bar">

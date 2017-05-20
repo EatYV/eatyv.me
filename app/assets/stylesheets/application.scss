@@ -476,3 +476,11 @@ iframe {
         background: rgba(240, 173, 78, 0.5);
     }
 }
+
+@media all {
+    .pagination {
+        margin-left: 0;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+}
