@@ -4,7 +4,7 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = Recipe.where('lower(location) LIKE lower(?) OR lower(location) LIKE lower(?)', "%#{params[:search]}%", "%#{params[:search]}%")
+    @recipes = Recipe.where('lower(city) LIKE lower(?) OR lower(city) LIKE lower(?)', "%#{params[:search]}%", "%#{params[:search]}%")
     @recipes = Recipe.paginate(:page => params[:page], :per_page => 8)
   end
 
