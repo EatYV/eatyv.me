@@ -10,10 +10,9 @@
         </div>
       </div>
     <br>
-      <h1>EatYV</h1>
-      <p>
-        Create your own recipes or eat Your Vegetables!
-      </p>
+      <h1><%= image_tag 'logo.png', width: '300' %></h1>
+      <p><strong>EatYV</strong> is a community marketplace/platform where people host,<br> discover and book unique venues around the world.</p>
+      
       <%= link_to 'Get Started', new_user_registration_path, class: 'button warning expanded'  %>
       <%= link_to 'Sign In', new_user_session_path, class: 'button warning expanded' %>
     </div>
